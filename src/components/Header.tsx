@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { Familjen_Grotesk } from "next/font/google";
+// import Link from "next/link";
+// import { Familjen_Grotesk } from "next/font/google";
 
-const familjenGrotesk = Familjen_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
+// const familjenGrotesk = Familjen_Grotesk({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+// });
 
 export default function Header() {
   return (

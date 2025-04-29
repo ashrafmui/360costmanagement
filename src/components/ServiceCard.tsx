@@ -1,4 +1,4 @@
-import { BarChart, Code, FileText, Lightbulb, Megaphone, Palette, type LucideIcon } from 'lucide-react';
+import { BarChart, Code, FileText, Lightbulb, Megaphone, Palette } from 'lucide-react';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface ServiceCardProps {
