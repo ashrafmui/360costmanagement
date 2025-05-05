@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection";
 // import { Familjen_Grotesk } from "next/font/google";
 import StatisticsSection from "@/components/StatisticsSection";
 import PhilosophySection from "@/components/PhilosophySection";
+import ServicesSection from "@/components/ServicesSection";
+import Footer from "@/components/Footer";
 
 // const familjenGrotesk = Familjen_Grotesk({
 //   subsets: ["latin"],
@@ -16,7 +18,9 @@ export default function Home() {
       <Header />
       <HeroSection />
       <StatisticsSection />
+      <ServicesSection />
       <PhilosophySection />
+      <Footer />  
     </main>
   );
 }
