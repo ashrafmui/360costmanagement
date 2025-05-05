@@ -56,7 +56,7 @@ export default function TeamPage() {
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Our Team</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Meet the talented individuals who make our company successful. We're a diverse group of professionals
+          Meet the talented individuals who make our company successful. We&apos;re a diverse group of professionals
           dedicated to excellence.
         </p>
       </div>
@@ -73,7 +73,6 @@ export default function TeamPage() {
             <CardHeader className="p-4">
                 <CardTitle>{member.name}</CardTitle>
                 <CardDescription>{member.role}</CardDescription>
-                {/* <p className="inline-block mt-1 text-sm text-white bg-black rounded-sm px-3 py-1">{member.degree}</p>*/}
                 <span className="bg-[#e8fc8c] text-black text-sm rounded-b-md px-3 py-1">{member.degree}</span>
             </CardHeader>
             <CardContent className="p-4 pt-0">
