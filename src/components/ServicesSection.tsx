@@ -18,32 +18,32 @@ export default function ServicesSection(){
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
             <ServiceCard
               title="Revenue and Expenses Analysis"
-              description="Gain clarity and control over your finances. We help you identify trends, optimize cash flow, and uncover opportunities by analyzing your revenue streams and expenses in detail."
+              description="Clear insights into your revenue and expenses to help you make smarter, more profitable decisions."
               icon="lightbulb"
             />
             <ServiceCard
               title="Cost Control and Budgeting"
-              description="Comprehensive digital marketing strategies to increase your online presence and drive customer engagement."
+              description="Smart budgeting and cost control strategies to boost efficiency and maximize your bottom line."
               icon="hand-coins"
             />
             <ServiceCard
               title="Financial Reporting"
-              description="Custom website and application development using the latest technologies and best practices."
+              description="Accurate, easy-to-understand financial reports to keep you informed and in control."
               icon="code"
             />
             <ServiceCard
               title="Payroll Preparation"
-              description="Create a compelling brand identity that resonates with your target audience and sets you apart from competitors."
+              description="Accurate, timely payroll processing to keep your team paid and your business compliant—stress-free and efficient."
               icon="palette"
             />
             <ServiceCard
               title="Financial Health Evaluation"
-              description="High-quality content that engages your audience and drives conversions across all platforms."
+              description="Assess and improve your financial health with expert guidance and tailored insights."
               icon="file-text"
             />
             <ServiceCard
               title="Tax Planning"
-              description="Data-driven insights to measure performance and inform strategic decision-making."
+              description="Proactive tax planning to minimize liabilities and keep more money in your pocket."
               icon="bar-chart"
             />
           </div>

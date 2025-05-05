@@ -11,9 +11,9 @@ export default function PhilosophySection() {
   return (
     <section className={`w-full bg-[#FAF7EB] py-12 ${familjenGrotesk.className}`}>
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-5xl mb-8 text-black">
-          Our Philosophy
-        </h2>
+        <div className="flex flex-col items-center justify-center space-y-8 text-center mb-8">
+            <h2 className="text-xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Philosophy</h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden min-h-screen">
             <div className="relative w-full h-full min-h-[200px] md:min-h-screen">
