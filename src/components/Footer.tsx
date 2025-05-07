@@ -27,9 +27,11 @@ export default function Footer() {
         <div>
           <h4 className="text-md font-semibold mb-3">Contact Us</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>Email: info@360cost.com</li>
-            <li>Phone: (555) 123-4567</li>
-            <li>Location: Boston, MA</li>
+            
+            <li>Email: info@360costmanagement.com</li>
+            <li>Phone: (347) 785-9125</li>
+            <li>Fax: (929) 296-7431</li>
+            <li>Location: New York, NY</li>
           </ul>
         </div>
       </div>

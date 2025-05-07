@@ -1,4 +1,5 @@
 // components/Hero.tsx
+import Link from "next/link";
 import Image from "next/image";
 import heroImage from "/public/hero.jpg"; // update path as needed
 import { Familjen_Grotesk } from "next/font/google";
@@ -20,9 +21,11 @@ export default function Hero() {
             <p className="text-lg mt-6 text-black">
             We secure your financial future with expert advice
             </p>
-            <button className="mt-6 w-fit px-6 py-3 bg-black text-white rounded-md hover:opacity-75 transition">
-            Contact Us
-            </button>
+            <Link href="/contact" passHref>
+              <button className="mt-6 w-fit px-6 py-3 bg-black text-white rounded-md hover:opacity-75 transition">
+                Contact Us
+              </button>
+            </Link>
         </div>
         <div className="relative w-full h-full min-h-[600px] md:min-h-screen">
             <Image

@@ -47,6 +47,7 @@ export default function ServicesSection(){
               icon="bar-chart"
             />
           </div>
+          
         </div>
       </section>
     )

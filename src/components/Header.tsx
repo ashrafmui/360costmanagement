@@ -1,13 +1,6 @@
 import Link from "next/link";
-// import { Familjen_Grotesk } from "next/font/google";
 import Image from "next/image";
 import logo from "/public/logo.svg";
-
-
-// const familjenGrotesk = Familjen_Grotesk({
-//   subsets: ["latin"],
-//   weight: ["400", "700"],
-// });
 
 export default function Header() {
   return (
@@ -19,9 +12,9 @@ export default function Header() {
         </Link>
       </div>
       <nav className="flex gap-6 text-sm">
-        <Link href="/about" className="hover:underline">About</Link>
-        <a href="/services" className="hover:underline">Services</a>
-        <a href="/contact" className="hover:underline">Contact</a>
+        <Link href="/about" className="hover:underline">Team</Link>
+        <Link href="/services" className="hover:underline">Services</Link>
+        <Link href="/contact" className="hover:underline">Contact</Link>
       </nav>
     </header>
   );

@@ -24,27 +24,27 @@ const teamMembers: TeamMember[] = [
   {
     id: 2,
     name: "Jewel Ashraf",
-    role: "",
-    bio: "Jewel has worked on ...",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    role: "Advisor",
+    bio: "Jewel is a strategic leader of financial management with 360 background in business administration. He has Master of Finance, Master of Business Administration, Master of Management. He studied in Cost and Management Accounting  post graduate courses. For more than last 20 years he has been playing a vital leadership rule in corporate finance, accounting, auditing, HR, and business administration of different industries. Jewel’s advisory rule is helping us to meet our client satisfaction. ",
+    imageUrl: "/jewel_ashraf.jpg",
     initials: "JA",
     degree: "Master of Finance"
   },
   {
     id: 3,
     name: "Jahangir Alam",
-    role: "",
-    bio: "Jahangir has worked on ...",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    role: "Member",
+    bio: "Jahangir is a dynamic client success  manager having 20 years of experience in corporate financial accounting including payroll preparation, employer tax, bookkeeping, cost and profitability analysis, budgeting, financial reporting and compliance under GAAP and IFRS standards. He worked for diverse industries. ",
+    imageUrl: "/jahangir_alam.jpg",
     initials: "JA",
     degree: "MBA Accounting"
   },
   {
     id: 4,
     name: "Shahed Chayan",
-    role: "",
-    bio: "Shahed has worked on ...",
-    imageUrl: "/placeholder.svg?height=300&width=300",
+    role: "Member",
+    bio: "Shahed is specialized in corporate and compliance environment. He graduated in computer engineering. He also studied in business administration and completed his masters in banking. He passionate attitude to help client made him one of the successful contributors in the team. He is specialized in business analytics, corporate tax planning and compliance.",
+    imageUrl: "/shahed_chayan.jpg",
     initials: "SC",
     degree: "MBA Banking "
   },
