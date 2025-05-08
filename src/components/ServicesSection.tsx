@@ -24,12 +24,12 @@ export default function ServicesSection(){
             <ServiceCard
               title="Cost Control and Budgeting"
               description="Smart budgeting and cost control strategies to boost efficiency and maximize your bottom line."
-              icon="hand-coins"
+              icon="bar-chart"
             />
             <ServiceCard
               title="Financial Reporting"
               description="Accurate, easy-to-understand financial reports to keep you informed and in control."
-              icon="code"
+              icon="file-text"
             />
             <ServiceCard
               title="Payroll Preparation"
@@ -39,12 +39,12 @@ export default function ServicesSection(){
             <ServiceCard
               title="Financial Health Evaluation"
               description="Assess and improve your financial health with expert guidance and tailored insights."
-              icon="file-text"
+              icon="file"
             />
             <ServiceCard
               title="Tax Planning"
               description="Proactive tax planning to minimize liabilities and keep more money in your pocket."
-              icon="bar-chart"
+              icon="trending-up"
             />
           </div>
           

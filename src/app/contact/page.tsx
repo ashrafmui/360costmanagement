@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import {PhoneIcon, MailIcon, ClockIcon, CheckCircleIcon, PrinterIcon} from "lucide-react"
+import {MailIcon, ClockIcon, CheckCircleIcon, PrinterIcon} from "lucide-react"
 
 export default function ContactPage() {
   const [formState, setFormState] = useState<"idle" | "submitting" | "success" | "error">("idle")
@@ -203,13 +203,6 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium">Fax</h3>
                       <p className="text-gray-600">(929) 296-7431</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <PhoneIcon className="h-5 w-5 mr-3 text-gray-600 mt-0.5" />
-                    <div>
-                        <h3 className="font-medium">Phone</h3>
-                        <p className="text-gray-600">(347) 785-9125</p>
                     </div>
                   </div>
                   <div className="flex items-start">

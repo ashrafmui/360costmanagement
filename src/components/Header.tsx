@@ -12,8 +12,8 @@ export default function Header() {
         </Link>
       </div>
       <nav className="flex gap-6 text-sm">
-        <Link href="/about" className="hover:underline">Team</Link>
         <Link href="/services" className="hover:underline">Services</Link>
+        <Link href="/about" className="hover:underline">Team</Link>
         <Link href="/contact" className="hover:underline">Contact</Link>
       </nav>
     </header>

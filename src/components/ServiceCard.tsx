@@ -1,4 +1,11 @@
-import { BarChart, Code, FileText, Lightbulb, Megaphone, Palette, HandCoins } from 'lucide-react';
+import {
+  LightbulbIcon,
+  BarChart3Icon,
+  FileTextIcon,
+  PaletteIcon,
+  FileIcon,
+  TrendingUpIcon,
+} from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 interface ServiceCardProps {
@@ -11,27 +18,23 @@ export default function ServiceCard({ title, description, icon }: ServiceCardPro
   const getIcon = () => {
     switch (icon) {
       case "lightbulb":
-        return <Lightbulb className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-      case "megaphone":
-        return <Megaphone className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-      case "code":
-        return <Code className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-      case "palette":
-        return <Palette className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-      case "file-text":
-        return <FileText className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+        return <LightbulbIcon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
       case "bar-chart":
-        return <BarChart className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-    case "hand-coins":
-        return <HandCoins className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
-      default:
-        return <Lightbulb className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+        return <BarChart3Icon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+      case "file-text":
+        return <FileTextIcon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+      case "palette":
+        return <PaletteIcon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+      case "file":
+        return <FileIcon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
+      case "trending-up":
+        return <TrendingUpIcon className="h-10 w-10 mb-4 text-gray-700 dark:text-gray-300" />;
     }
   };
 
   return (
     <Card className="flex flex-col items-center text-center p-6 hover:shadow-lg transition-shadow">
-      <CardHeader className="flex flex-col items-center pb-2">
+      <CardHeader className="flex flex-col items-center pb-2 text-[#a9b856]">
         {getIcon()}
           <h3 className="text-xl font-bold text-center whitespace-nowrap px-[5px] sm:px-0">{title}</h3>
       </CardHeader>

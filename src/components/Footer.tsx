@@ -29,7 +29,6 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-400">
             
             <li>Email: info@360costmanagement.com</li>
-            <li>Phone: (347) 785-9125</li>
             <li>Fax: (929) 296-7431</li>
             <li>Location: New York, NY</li>
           </ul>

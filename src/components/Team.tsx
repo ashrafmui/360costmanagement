@@ -16,22 +16,13 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: "Sakiya Ashraf",
     role: "Chief of Operations",
-    bio: "Sakiyah manages the operations of the company, ensuring client satisfaction and retention.",
+    bio: "I believe that the strength in our team and our ability to deal with constantly changing business environment is what makes us great partners with our clients. This is why I am proud to be in the team. Our motto is to exceed ourselves",
     imageUrl: "/placeholder.svg?height=300&width=300",
     initials: "SA",
     degree: "Bachelor in Business Studies, Accounting Major",
   },
   {
     id: 2,
-    name: "Jewel Ashraf",
-    role: "Advisor",
-    bio: "Jewel is a strategic leader of financial management with 360 background in business administration. He has Master of Finance, Master of Business Administration, Master of Management. He studied in Cost and Management Accounting  post graduate courses. For more than last 20 years he has been playing a vital leadership rule in corporate finance, accounting, auditing, HR, and business administration of different industries. Jewel’s advisory rule is helping us to meet our client satisfaction. ",
-    imageUrl: "/jewel_ashraf.jpg",
-    initials: "JA",
-    degree: "Master of Finance"
-  },
-  {
-    id: 3,
     name: "Jahangir Alam",
     role: "Member",
     bio: "Jahangir is a dynamic client success  manager having 20 years of experience in corporate financial accounting including payroll preparation, employer tax, bookkeeping, cost and profitability analysis, budgeting, financial reporting and compliance under GAAP and IFRS standards. He worked for diverse industries. ",
@@ -40,13 +31,22 @@ const teamMembers: TeamMember[] = [
     degree: "MBA Accounting"
   },
   {
-    id: 4,
+    id: 3,
     name: "Shahed Chayan",
     role: "Member",
     bio: "Shahed is specialized in corporate and compliance environment. He graduated in computer engineering. He also studied in business administration and completed his masters in banking. He passionate attitude to help client made him one of the successful contributors in the team. He is specialized in business analytics, corporate tax planning and compliance.",
     imageUrl: "/shahed_chayan.jpg",
     initials: "SC",
     degree: "MBA Banking "
+  },
+  {
+    id: 4,
+    name: "Jewel Ashraf",
+    role: "Advisor",
+    bio: "Jewel is a strategic leader of financial management with 360 background in business administration. He has Master of Finance, Master of Business Administration, Master of Management. He also studied in Cost and Management Accounting post graduate courses. For more than last 20 years he has been playing a vital leadership rule in corporate finance, accounting, auditing, HR, and business administration of different industries. Jewel’s advisory role assists us in meeting our client satisfaction. ",
+    imageUrl: "/jewel_ashraf.jpg",
+    initials: "JA",
+    degree: "Master of Finance"
   },
 ]
 
