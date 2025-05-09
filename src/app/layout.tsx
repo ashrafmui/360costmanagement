@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   description: "Accounting & consulting services that put your costs in focus.",
   icons: {
     icon: [
-      { url: "/favicon.ico" },           // default
+      { url: "/logo.ico" },           // default
       { url: "/logo.svg", type: "image/svg+xml" },
     ],
-    shortcut: "/favicon.ico",            // Windows / legacy
-    apple: "/apple-touch-icon.png",      // iOS
+    shortcut: "/logo.ico",            // Windows / legacy
+    apple: "/logo.svg",      // iOS
   },
 };
 const familjenGrotesk = Familjen_Grotesk({
