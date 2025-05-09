@@ -27,7 +27,7 @@ export default function TeamPage() {
     {
       name: "Shahed Chayan",
       title: "Member",
-      degrees: ["CPA", "MBA in Finance", "BSc Computer Engineering"],
+      degrees: ["MBA in Finance", "BSc Computer Engineering"],
       bio: `Shahed specialises in corporate tax planning, compliance, and
             business analytics. His passion for client success has made him an
             invaluable contributor to the team.`,
