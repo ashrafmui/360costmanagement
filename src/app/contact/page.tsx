@@ -21,25 +21,35 @@ export default function ContactPage() {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setFormState("submitting")
+  e.preventDefault()
+  setFormState("submitting")
 
-    // Simulate form submission
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setFormState("success")
-      // Reset form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      })
-    } catch (error) {
-      setFormState("error")
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+
+    if (!res.ok) {
+      throw new Error(`Server error: ${res.status}`)
     }
+
+    setFormState("success")
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
+  } catch (error) {
+    console.error("Contact form submission failed:", error)
+    setFormState("error")
   }
+}
 
   return (
     <main className="flex min-h-screen flex-col items-center">

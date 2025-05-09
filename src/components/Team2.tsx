@@ -6,7 +6,7 @@ export default function TeamPage() {
       name: "Jahangir Alam",
       title: "Member",
       degrees: "MBA in Accounting",
-      bio: "Jahangir is a dynamic client success  manager having 20 years of experience in corporate financial accounting including payroll preparation, employer tax, bookkeeping, cost and profitability analysis, budgeting, financial reporting and compliance under GAAP and IFRS standards. He worked for diverse industries.Jane has over 15 years of experience in technology leadership. She previously led engineering teams at major tech companies and brings a wealth of knowledge in AI and machine learning.",
+      bio: "Jahangir is a dynamic client success  manager having 20 years of experience in corporate financial accounting including payroll preparation, employer tax, bookkeeping, cost and profitability analysis, budgeting, financial reporting and compliance under GAAP and IFRS standards. He worked for diverse industries.",
       avatar: "/jahangir_alam.jpg",
     },
     {
@@ -19,7 +19,7 @@ export default function TeamPage() {
     {
       name: "Jewel Ashraf",
       title: "Advisor",
-      degrees: "MS in Marketing, BA in Communications",
+      degrees: "MS in Finance",
       bio: "Jewel is a strategic leader of financial management with 360 background in business administration. He has Master of Finance, Master of Business Administration, Master of Management. He also studied in Cost and Management Accounting post graduate courses. For more than last 20 years he has been playing a vital leadership rule in corporate finance, accounting, auditing, HR, and business administration of different industries. Jewel's advisory role assists us in meeting our client satisfaction.",
       avatar: "/jewel_ashraf.jpg",
     },
