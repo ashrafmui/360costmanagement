@@ -123,12 +123,6 @@ export default function ServicesPage() {
               },
               {
                 quote:
-                  "Their tax planning strategies saved us thousands of dollars last year. Highly recommend their services to any growing business.",
-                name: "Michael Chen",
-                title: "CFO, GrowthWave Solutions",
-              },
-              {
-                quote:
                   "The payroll services have been a game-changer for our HR department. Accurate, on-time, and completely stress-free.",
                 name: "Jessica Miller",
                 title: "HR Director, Retail Innovations",
