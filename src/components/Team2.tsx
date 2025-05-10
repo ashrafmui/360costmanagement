@@ -53,7 +53,7 @@ export default function TeamPage() {
       {/* ——— CEO ——— */}
       <section className="mb-16 max-w-3xl mx-auto">
         <div className="bg-[#f8ffcc] dark:bg-[#243B55] p-8 rounded-xl shadow-sm">
-          <h2 className="text-2xl font-semibold">Sakiya Ashraf, CEO</h2>
+          <h2 className="text-2xl font-semibold">Sakiya Ashraf, Head of Operations</h2>
           <p className="font-medium mb-4">BBS Accounting</p>
           <blockquote className="italic text-lg leading-relaxed">
             “I believe that the strength of our team and our adaptability in a
