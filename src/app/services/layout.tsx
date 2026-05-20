@@ -1,17 +1,21 @@
-import type React from "react"
-import type { Metadata } from "next"
+import type React from "react";
+import type { Metadata } from "next";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Services | 360CostManagement",
-  description: "Discover our comprehensive financial management services designed to help your business thrive.",
-}
+  title: {
+    default: "Accounting Services",
+    template: "%s | 360 Cost Management",
+  },
+  description:
+    "Comprehensive accounting and cost-management services — bookkeeping, payroll, tax planning, and financial reporting — for NYC businesses.",
+};
 
 export default function ServicesLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <>
@@ -19,5 +23,5 @@ export default function ServicesLayout({
       {children}
       <Footer />
     </>
-  )
+  );
 }

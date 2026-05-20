@@ -1,7 +1,7 @@
 // components/Hero.tsx
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "/public/hero.jpg"; // update path as needed
+import heroImage from "/public/hero.webp";
 import { Familjen_Grotesk } from "next/font/google";
 
 const familjenGrotesk = Familjen_Grotesk({
@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="relative w-full h-full min-h-[600px] md:min-h-screen">
             <Image
             src={heroImage}
-            alt="Hero image"
+            alt="Accounting professional reviewing financial reports with a client"
             fill
             className="object-cover"
             priority

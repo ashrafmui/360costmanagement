@@ -5,6 +5,43 @@ import type React from "react"
 import { useState } from "react"
 import {MailIcon, ClockIcon, CheckCircleIcon, PrinterIcon} from "lucide-react"
 
+const FAQS = [
+  {
+    q: "How quickly can you start working with my business?",
+    a: "We can typically begin working with new clients within 1-2 weeks of our initial consultation, depending on the complexity of your needs.",
+  },
+  {
+    q: "Do you work with businesses of all sizes?",
+    a: "Yes, we provide services to businesses of all sizes, from startups to established enterprises, and tailor our approach to meet your specific needs.",
+  },
+  {
+    q: "What industries do you specialize in?",
+    a: "We have experience across multiple industries including retail, technology, healthcare, manufacturing, and professional services.",
+  },
+  {
+    q: "How much do your services cost?",
+    a: "Our pricing varies based on the services required and the size of your business. We offer customized packages and would be happy to provide a quote.",
+  },
+  {
+    q: "Do you offer virtual consultations?",
+    a: "Yes, we offer both in-person and virtual consultations to accommodate your preferences and location.",
+  },
+  {
+    q: "How do I get started?",
+    a: "Simply fill out our contact form or give us a call, and one of our financial experts will reach out to schedule an initial consultation.",
+  },
+]
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+}
+
 export default function ContactPage() {
   const [formState, setFormState] = useState<"idle" | "submitting" | "success" | "error">("idle")
   const [formData, setFormData] = useState({
@@ -53,6 +90,10 @@ export default function ContactPage() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f8ffcc]">
         <div className="container px-4 md:px-6 mx-auto text-center">
@@ -248,47 +289,12 @@ export default function ContactPage() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">How quickly can you start working with my business?</h3>
-              <p className="text-gray-600">
-                We can typically begin working with new clients within 1-2 weeks of our initial consultation, depending
-                on the complexity of your needs.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">Do you work with businesses of all sizes?</h3>
-              <p className="text-gray-600">
-                Yes, we provide services to businesses of all sizes, from startups to established enterprises, and
-                tailor our approach to meet your specific needs.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">What industries do you specialize in?</h3>
-              <p className="text-gray-600">
-                We have experience across multiple industries including retail, technology, healthcare, manufacturing,
-                and professional services.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">How much do your services cost?</h3>
-              <p className="text-gray-600">
-                Our pricing varies based on the services required and the size of your business. We offer customized
-                packages and would be happy to provide a quote.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">Do you offer virtual consultations?</h3>
-              <p className="text-gray-600">
-                Yes, we offer both in-person and virtual consultations to accommodate your preferences and location.
-              </p>
-            </div>
-            <div className="rounded-lg border bg-card p-6">
-              <h3 className="text-lg font-bold mb-2">How do I get started?</h3>
-              <p className="text-gray-600">
-                Simply fill out our contact form or give us a call, and one of our financial experts will reach out to
-                schedule an initial consultation.
-              </p>
-            </div>
+            {FAQS.map(({ q, a }) => (
+              <div key={q} className="rounded-lg border bg-card p-6">
+                <h3 className="text-lg font-bold mb-2">{q}</h3>
+                <p className="text-gray-600">{a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

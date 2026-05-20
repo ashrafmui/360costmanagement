@@ -1,5 +1,6 @@
 // src/app/services/[service]/page.tsx
 
+import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import {
@@ -167,6 +168,28 @@ const services = {
 // Generate static paths for all services
 export function generateStaticParams() {
   return Object.keys(services).map((service) => ({ service }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ service: string }>
+}): Promise<Metadata> {
+  const { service } = await params
+  const serviceData = services[service as keyof typeof services]
+  if (!serviceData) {
+    return { title: "Service Not Found" }
+  }
+  return {
+    title: `${serviceData.title} — NYC Accounting`,
+    description: serviceData.description,
+    alternates: { canonical: `/services/${service}` },
+    openGraph: {
+      title: `${serviceData.title} | 360 Cost Management`,
+      description: serviceData.description,
+      url: `/services/${service}`,
+    },
+  }
 }
 
 // ✅ Async component to handle promised `params`

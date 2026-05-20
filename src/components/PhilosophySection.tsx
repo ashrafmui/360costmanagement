@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Familjen_Grotesk } from "next/font/google";
-import philosophyImage from "/public/philosophy.jpg"; // Make sure the image exists!
+import philosophyImage from "/public/philosophy.webp";
 
 const familjenGrotesk = Familjen_Grotesk({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ export default function PhilosophySection() {
             <div className="relative w-full h-full min-h-[200px] md:min-h-screen">
                 <Image
                 src={philosophyImage}
-                alt="Philosophy image"
+                alt="360 Cost Management team collaborating on financial strategy"
                 fill
                 className="object-cover"
                 priority

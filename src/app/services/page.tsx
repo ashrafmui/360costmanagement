@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   LightbulbIcon,
@@ -7,6 +8,13 @@ import {
   FileIcon,
   TrendingUpIcon,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Accounting Services",
+  description:
+    "Revenue & expenses analysis, cost control & budgeting, financial reporting, payroll preparation, financial health evaluation, and tax planning — GAAP/IFRS-compliant accounting services for NYC businesses.",
+  alternates: { canonical: "/services" },
+};
 
 export default function ServicesPage() {
   return (

@@ -16,16 +16,16 @@ export default function StatisticsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-black text-center">
           <div className="py-12 px-6">
-            <p className="text-6xl font-bold text-black">5</p>
-            <p className="mt-6 text-xl text-black">Clients Under Management</p>
-          </div>
-          <div className="py-12 px-6">
             <p className="text-6xl font-bold text-black">$200M+</p>
-            <p className="mt-6 text-xl text-black">Assets Managed</p>
+            <p className="mt-6 text-xl text-black">Assets Under Management</p>
           </div>
           <div className="py-12 px-6">
-            <p className="text-6xl font-bold text-black">20</p>
-            <p className="mt-6 text-xl text-black">Years of Experience</p>
+            <p className="text-6xl font-bold text-black">20+</p>
+            <p className="mt-6 text-xl text-black">Years of Combined Experience</p>
+          </div>
+          <div className="py-12 px-6">
+            <p className="text-6xl font-bold text-black">6</p>
+            <p className="mt-6 text-xl text-black">Core Service Lines</p>
           </div>
         </div>
       </div>
