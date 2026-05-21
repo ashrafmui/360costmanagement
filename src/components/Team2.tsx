@@ -4,10 +4,9 @@ import Image from "next/image"
 interface TeamMember {
   name: string
   title: string
-  degrees: string[]          // ⬅ multiple degree entries
+  degrees: string[]
   bio: string
   avatar: string
-  bgColor?: string           // ⬅ per-card background override
 }
 
 /** ——— Component ——— */
@@ -22,7 +21,6 @@ export default function TeamPage() {
             bookkeeping, cost & profitability analysis, budgeting, financial
             reporting, and GAAP/IFRS compliance across diverse industries.`,
       avatar: "/jahangir_alam.jpg",
-      bgColor: "bg-[#F3FAFF]",   // pale blue
     },
     {
       name: "Shahed Chayan",
@@ -32,7 +30,6 @@ export default function TeamPage() {
             business analytics. His passion for client success has made him an
             invaluable contributor to the team.`,
       avatar: "/shahed_chayan.jpg",
-      bgColor: "bg-[#FFF7ED]",   // pale peach
     },
     {
       name: "Jewel Ashraf",
@@ -42,17 +39,17 @@ export default function TeamPage() {
             accounting, auditing, HR, and business administration. His advisory
             role helps us consistently exceed client expectations.`,
       avatar: "/jewel_ashraf.jpg",
-      bgColor: "bg-[#F1FDF6]",   // pale green
     },
   ]
 
   return (
-    <div className="container mx-auto px-4 py-12 md:py-16">
-      <h1 className="text-6xl font-bold text-center mb-12">Our Team</h1>
+    <div className="bg-brand-soft/15">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <h1 className="text-6xl font-bold text-center mb-12">Our Team</h1>
 
       {/* ——— CEO ——— */}
       <section className="mb-16 max-w-3xl mx-auto">
-        <div className="bg-[#f8ffcc] dark:bg-[#243B55] p-8 rounded-xl shadow-sm">
+        <div className="bg-page/60 backdrop-blur-md border border-black/5 p-8 rounded-2xl">
           <h2 className="text-2xl font-semibold">Sakiya Ashraf, Head of Operations</h2>
           <p className="font-medium mb-4">BBS Accounting</p>
           <blockquote className="italic text-lg leading-relaxed">
@@ -71,7 +68,7 @@ export default function TeamPage() {
         {teamMembers.map((m) => (
           <article
             key={m.name}
-            className={`flex flex-col md:flex-row gap-6 items-start p-6 rounded-xl shadow-sm ${m.bgColor ?? "bg-muted"}`}
+            className="flex flex-col md:flex-row gap-6 items-start p-6 rounded-2xl border border-black/5 bg-page/60 backdrop-blur-md"
           >
             {/* Avatar */}
             <div className="flex-shrink-0">
@@ -107,6 +104,7 @@ export default function TeamPage() {
             </div>
           </article>
         ))}
+      </div>
       </div>
     </div>
   )

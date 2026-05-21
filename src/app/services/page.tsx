@@ -20,7 +20,7 @@ export default function ServicesPage() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f8ffcc]">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-soft">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <div className="flex flex-col items-center space-y-4">
             <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl">Our Services</h1>
@@ -35,7 +35,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-brand-soft/15">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
             {[ 
@@ -47,13 +47,13 @@ export default function ServicesPage() {
               { title: "Tax Planning", icon: <TrendingUpIcon />, href: "/services/tax-planning", desc: "Proactive tax planning to minimize liabilities and keep more money in your pocket." },
             ].map((service, i) => (
               <div key={i} className="flex justify-center">
-                <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm border max-w-sm w-full text-center">
-                  <div className="p-3 mb-4 rounded-full bg-[#f8ffcc]">
+                <div className="flex flex-col items-center p-6 bg-page/60 backdrop-blur-md rounded-2xl border border-black/5 max-w-sm w-full text-center">
+                  <div className="p-3 mb-4 rounded-full bg-brand-soft">
                     {service.icon}
                   </div>
                   <h3 className="mb-2 text-xl font-bold">{service.title}</h3>
                   <p className="text-gray-600">{service.desc}</p>
-                  <Link href={service.href} className="mt-4 inline-flex items-center justify-center px-4 py-2 text-sm font-medium bg-[#f8ffcc] text-gray-900 rounded-md hover:bg-[#e6f0b0]">
+                  <Link href={service.href} className="mt-4 inline-flex items-center justify-center px-4 py-2 text-sm font-medium bg-brand-soft text-gray-900 rounded-md hover:bg-brand-soft/70">
                     Learn More
                   </Link>
                 </div>
@@ -75,7 +75,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-[#f8ffcc] px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-[#e6f0b0] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-brand-soft px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-brand-soft/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
             >
               Contact Us Today
             </Link>
@@ -96,7 +96,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 place-items-center">
             {["Initial Consultation", "Customized Strategy", "Implementation & Support"].map((title, i) => (
               <div key={i} className="flex flex-col items-center text-center max-w-sm">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f8ffcc] text-xl font-bold">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft text-xl font-bold">
                   {i + 1}
                 </div>
                 <h3 className="mt-4 text-xl font-bold">{title}</h3>
@@ -112,7 +112,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-full py-12 md:py-24 bg-gray-50">
+      <section className="w-full py-12 md:py-24 bg-brand-soft/20">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">What Our Clients Say</h2>
@@ -137,7 +137,7 @@ export default function ServicesPage() {
               },
             ].map((testimonial, i) => (
               <div key={i} className="flex justify-center">
-                <div className="flex flex-col p-6 bg-white rounded-lg shadow-sm border max-w-sm w-full text-center">
+                <div className="flex flex-col p-6 bg-page/60 backdrop-blur-md rounded-2xl border border-black/5 max-w-sm w-full text-center">
                   <p className="italic text-gray-600 mb-4">&quot;{testimonial.quote}&quot;</p>
                   <div className="mt-auto">
                     <p className="font-bold">{testimonial.name}</p>

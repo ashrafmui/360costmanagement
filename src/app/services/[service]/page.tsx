@@ -210,7 +210,7 @@ export default async function ServicePage({
   return (
     <main className="flex min-h-screen flex-col items-center">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f8ffcc]">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-soft">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <div className="flex flex-col items-center space-y-4">
             <div className="p-3 mb-4 rounded-full bg-white">
@@ -227,7 +227,7 @@ export default async function ServicePage({
       </section>
 
       {/* Service Details */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-brand-soft/15">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 place-items-center">
             <div className="lg:col-span-2 w-full">
@@ -237,7 +237,7 @@ export default async function ServicePage({
               />
             </div>
             <div className="lg:col-span-1 w-full">
-              <div className="bg-gray-50 p-6 rounded-lg border text-center">
+              <div className="bg-page/60 backdrop-blur-md p-6 rounded-2xl border border-black/5 text-center">
                 <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
                 <p className="mb-6">
                   Contact us today to learn more about our{" "}
@@ -245,13 +245,13 @@ export default async function ServicePage({
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-[#f8ffcc] px-8 text-sm font-medium text-gray-900 shadow hover:bg-[#e6f0b0]"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-brand-soft px-8 text-sm font-medium text-gray-900 shadow hover:bg-brand-soft/70"
                 >
                   Contact Us
                 </Link>
               </div>
 
-              <div className="mt-8 bg-gray-50 p-6 rounded-lg border text-center">
+              <div className="mt-8 bg-page/60 backdrop-blur-md p-6 rounded-2xl border border-black/5 text-center">
                 <h3 className="text-xl font-bold mb-4">Other Services</h3>
                 <ul className="space-y-3">
                   {Object.entries(services)
@@ -293,7 +293,7 @@ export default async function ServicePage({
             </p>
             <Link
               href="/contact"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-[#f8ffcc] px-8 text-sm font-medium text-gray-900 shadow hover:bg-[#e6f0b0] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-brand-soft px-8 text-sm font-medium text-gray-900 shadow hover:bg-brand-soft/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
             >
               Contact Us Today
             </Link>

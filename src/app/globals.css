@@ -4,6 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-page: var(--page);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -45,6 +48,9 @@
 
 :root {
   --radius: 0.625rem;
+  --page: oklch(1 0 0);
+  --brand: oklch(0.508 0.118 165.612);
+  --brand-soft: oklch(0.95 0.052 163.051);
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
@@ -118,5 +124,45 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.modal-anim {
+  opacity: 0;
+  transform: scale(0.96) translateY(-8px);
+  transition:
+    opacity 220ms ease-out,
+    transform 220ms ease-out,
+    overlay 220ms ease-out allow-discrete,
+    display 220ms ease-out allow-discrete;
+}
+.modal-anim[open] {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+@starting-style {
+  .modal-anim[open] {
+    opacity: 0;
+    transform: scale(0.96) translateY(-8px);
+  }
+}
+
+.modal-anim::backdrop {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  transition:
+    background 220ms ease-out,
+    backdrop-filter 220ms ease-out,
+    overlay 220ms ease-out allow-discrete,
+    display 220ms ease-out allow-discrete;
+}
+.modal-anim[open]::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+@starting-style {
+  .modal-anim[open]::backdrop {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
   }
 }

@@ -95,7 +95,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f8ffcc]">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-soft">
         <div className="container px-4 md:px-6 mx-auto text-center">
           <div className="flex flex-col items-center space-y-4">
             <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl">Contact Us</h1>
@@ -108,11 +108,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form and Info Section */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-brand-soft/15">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Contact Form */}
-            <div className="rounded-lg border bg-card p-8">
+            <div className="rounded-2xl border border-black/5 bg-page/60 backdrop-blur-md p-8">
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
 
               {formState === "success" ? (
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     onClick={() => setFormState("idle")}
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-[#f8ffcc] px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-[#e6f0b0] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-brand-soft px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-brand-soft/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950"
                   >
                     Send Another Message
                   </button>
@@ -236,7 +236,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={formState === "submitting"}
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-[#f8ffcc] px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-[#e6f0b0] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:opacity-50"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-brand-soft px-8 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-brand-soft/70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:opacity-50"
                   >
                     {formState === "submitting" ? "Sending..." : "Send Message"}
                   </button>
@@ -279,7 +279,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24 bg-gray-50">
+      <section className="w-full py-12 md:py-24 bg-brand-soft/20">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Frequently Asked Questions</h2>
@@ -290,7 +290,7 @@ export default function ContactPage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {FAQS.map(({ q, a }) => (
-              <div key={q} className="rounded-lg border bg-card p-6">
+              <div key={q} className="rounded-2xl border border-black/5 bg-page/60 backdrop-blur-md p-6">
                 <h3 className="text-lg font-bold mb-2">{q}</h3>
                 <p className="text-gray-600">{a}</p>
               </div>

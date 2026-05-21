@@ -1,38 +1,21 @@
-import Image from "next/image";
-import { Familjen_Grotesk } from "next/font/google";
-import philosophyImage from "/public/philosophy.webp";
-
-const familjenGrotesk = Familjen_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
 export default function PhilosophySection() {
   return (
-    <section className={`w-full bg-[#FAF7EB] py-12 ${familjenGrotesk.className}`}>
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col items-center justify-center space-y-8 text-center mb-8">
-            <h2 className="text-xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Philosophy</h2>
+    <section className="bg-brand-soft py-24 lg:py-32">
+      <div className="max-w-4xl mx-auto px-6 lg:px-10 text-center">
+        <div className="inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.18em] text-black/60 mb-8">
+          <span className="h-px w-8 bg-black/40" />
+          Our philosophy
+          <span className="h-px w-8 bg-black/40" />
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden min-h-screen">
-            <div className="relative w-full h-full min-h-[200px] md:min-h-screen">
-                <Image
-                src={philosophyImage}
-                alt="360 Cost Management team collaborating on financial strategy"
-                fill
-                className="object-cover"
-                priority
-                />
-            </div>
-
-            <div className="bg-[#EBFF84] flex items-center p-8">
-                <p className="text-3xl text-black leading-relaxed">
-                At 360 Cost Management, we are dedicated to providing expert financial advice
-                that secures the future of our clients. With a focus on trust, integrity, and
-                professionalism, we aim to be your trusted financial partner.
-                </p>
-            </div>
+        <blockquote className="text-2xl md:text-4xl font-medium leading-snug text-black tracking-tight">
+          <span className="text-black/30 mr-1">&ldquo;</span>
+          We&apos;re dedicated to providing expert financial advice that secures
+          the future of our clients — grounded in trust, integrity, and
+          professionalism.
+          <span className="text-black/30 ml-1">&rdquo;</span>
+        </blockquote>
+        <div className="mt-10 text-sm uppercase tracking-[0.18em] text-black/60">
+          360 Cost Management
         </div>
       </div>
     </section>
